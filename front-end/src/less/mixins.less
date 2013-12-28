@@ -1,0 +1,12 @@
+@spriteGrid: 40px;
+
+.sprite(@x, @y) {
+   //background-position:nd: url(@img) no-repeat;
+   background-position: -(@x*@spriteGrid) -(@y*@spriteGrid);
+}
+
+.hideText{
+   text-indent: -999em;
+   letter-spacing: -999em;
+   overflow: hidden;
+}

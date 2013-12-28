@@ -1,0 +1,31 @@
+{
+    "name": "siga-adiante/crawler",
+    "description": "siga-adiante database crawler",
+    "type": "cakephp-shell",
+    "keywords": ["cakephp", "siga", "crawler", "siga-adiante"],
+    "homepage": "https://dev.siga-adiante.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Almeida",
+            "homepage": "http://gabrielalmeida.com",
+            "role": "Author"
+        },
+        {
+            "name": "CakePHP Community",
+            "homepage": "https://github.com/cakephp/"
+        }
+    ],
+
+    "config": { 
+        "vendor-dir": "Vendor" 
+    },
+    
+    "require": {
+       
+    },
+    
+     "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}

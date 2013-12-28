@@ -1,0 +1,161 @@
+nav {
+.navbar;
+.navbar-default;
+.container;
+
+@media(max-width: @screen-xs-max) {
+        margin:0;
+    }
+}
+
+.navbar-default {
+  background:@white;
+  border:0;
+}
+
+.navbar-header {
+  background: url("@{imgpath}/minerva-perfil.png") no-repeat @green;
+
+  @media (min-width: @screen-sm-min) {
+    width:250px;
+    height:60px;
+  }
+
+    .navbar-toggle {
+      background:@white;
+      border: 1px solid @white;
+
+      .icon-bar {
+        background: @dark-green;
+      }
+    }
+
+    .navbar-toggle:hover, .navbar-toggle:active {
+      background: @dark-green;
+
+        .icon-bar {
+          background:@white;
+        }
+    }
+}
+
+a.navbar-brand, a.navbar-brand:hover {
+    color: @white;
+    font: bold 32px "Lucida Grande";
+    text-transform: uppercase;
+    padding: 5px 0 0 90px;
+
+    @media(max-width: @screen-xs-max) {
+      padding: 5px  0 0 75px;
+    }
+
+    small {
+        font-weight: normal;
+        font-size: 14px;
+        @media(min-width: @screen-md-min) {
+         position:relative;
+         top: 15px;
+         left:-30px;
+        }
+    }
+
+}
+
+
+    ul.nav {
+
+        @media(max-width:@screen-xs-max) {
+            li:last-child {
+                border: 0;
+            }
+        }
+
+        li {
+          @media(min-width: @screen-sm-min) {
+            border-right: 1px solid @light-gray;
+          }
+
+          @media(max-width: @screen-xs-min) {
+            border-bottom: 1px solid @light-gray;
+          }
+          height: 60px;
+          padding: 15px 25px;
+          @media(min-width: @screen-md-min) {
+            padding: 15px 35px;
+            .hideText;
+          }
+          background: @white;
+
+            a {
+                padding:0;
+
+                @media(max-width: @screen-xs-max) {
+                    text-indent: 45px;
+                    padding: 8px 0px;
+                }
+                margin:0;
+                height:42px;
+            }
+
+            a:hover {
+                color: @dark-green;
+            }
+        }
+    }
+
+
+ .nav-bg() {
+        background: url("@{imgpath}/nav-icons.png") no-repeat 0 0 @white;
+    }
+
+a.home {
+  .nav-bg();
+  .sprite(0,0);
+  width:32px;
+}
+
+a.home:hover {
+  .sprite(1,0)
+}
+
+a.carona {
+    .nav-bg();
+    .sprite(2,0);
+    width:32px;
+}
+
+a.carona:hover {
+    .sprite(3,0);
+}
+
+#nav-line, #nav-xs-line {
+  background: @dark-green;
+  width: 100%;
+  height: 8px;
+}
+
+.navbar-form {
+  height: 60px;
+  margin: 0;
+  padding: 13px 30px;
+ }
+
+.navbar-right {
+  padding-right: 50px;
+  border-left: 1px solid #f0eee2;
+
+   @media(max-width: @screen-xs-max) {
+     margin: 10px 0 0 -30px;
+    border:0;
+    width: 300px;
+    height: auto;
+  }
+}
+
+.navbar-form button[type="submit"] {
+    @media(max-width: @screen-xs-max) {
+        position:relative;
+        left: 150px;
+        top: -40px;
+    }
+}
